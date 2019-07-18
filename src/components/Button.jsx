@@ -4,10 +4,9 @@ import PropTypes from 'prop-types';
 
 function Button(props) {
     return (
-        <div className='wrapper'
-        >
+        <div className='wrapper'>
             {
-                props.link  
+                props.link
                     ? <a href={props.link}>{props.link} </a>
                     : <button>{props.text}</button>
             }
@@ -23,5 +22,3 @@ Button.propTypes = {
 }
 
 export default Button;
-
-//Input type=string, value = string, error = boolean

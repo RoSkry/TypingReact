@@ -5,14 +5,19 @@ import './Input.css'
 function Input(props) {
     return (
         <div>
-            <input className={props.error ? "red" : ""} value={props.value} type={props.type} onChange={props.onChange} />
+            <input className={
+                props.error
+                    ?
+                    "red" :
+                    ""
+            } value={props.value} type={props.type} onChange={props.onChange} />
         </div>
     )
 }
 
 Input.propTypes = {
     value: PropTypes.string.isRequired,
-    type: PropTypes.oneOf(['password', 'button', 'image']).isRequired,
+    type: PropTypes.oneOf(['password', 'button', 'image', 'radio', 'email', 'submit', 'number']).isRequired,
     error: PropTypes.bool.isRequired,
     onChange: PropTypes.func.isRequired
 }

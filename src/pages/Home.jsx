@@ -1,10 +1,9 @@
 import React from 'react';
 
-function Home()
-{
-    return(
+function Home() {
+    return (
         <React.Fragment>
-            Home 
+            Home
         </React.Fragment>
     )
 }

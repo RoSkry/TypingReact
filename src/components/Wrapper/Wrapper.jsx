@@ -9,7 +9,6 @@ function Wrapper(props) {
         <div className='wrapper'>
             <h1>{props.text}</h1>
             {props.children}
-
         </div>
     )
 }
