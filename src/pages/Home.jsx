@@ -4,7 +4,7 @@ function Home()
 {
     return(
         <React.Fragment>
-            Home
+            Home 
         </React.Fragment>
     )
 }
