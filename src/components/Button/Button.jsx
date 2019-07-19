@@ -1,14 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+import { Link } from "react-router-dom";
+import './Button.css'
 
 function Button(props) {
     return (
         <div className='wrapper'>
             {
                 props.link
-                    ? <a href={props.link}>{props.link} </a>
-                    : <button>{props.text}</button>
+                    ? <Link to={props.link} > {props.text} </Link>
+                    : <button className={props.color}>{props.text}</button>
             }
         </div>
     )

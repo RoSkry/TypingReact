@@ -1,6 +1,6 @@
 import React from 'react';
 import './Wrapper.css'
-import Button from '../Button'
+import Button from '../Button/Button'
 
 
 function Wrapper(props) {
