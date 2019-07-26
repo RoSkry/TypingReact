@@ -9,7 +9,7 @@ function Button(props) {
             {
                 props.link
                     ? <Link to={props.link} > {props.text} </Link>
-                    : <button className={props.color}>{props.text}</button>
+                    : <button className={props.color} onClick={props.onClick}>{props.text}</button>
             }
         </div>
     )

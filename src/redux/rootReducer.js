@@ -1,6 +1,8 @@
 import { combineReducers } from "redux";
-import { actionReducer } from "./reducers/actionReducer";
+import { profileReducer } from "./reducers/profileReducer";
+import { authReducer } from "./reducers/authReducer";
 
 export const rootReducer = combineReducers({
-  actionReducer
+  profileReducer,
+  authReducer
 });
