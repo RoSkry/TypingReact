@@ -25,7 +25,6 @@ function Navigation(props) {
                 <Button color="green" onClick={logOut} text="Log Out" />
                 :
                 <Button color="red" link="/login" text="Log In" />
-
             }
         </React.Fragment>
     )

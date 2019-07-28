@@ -21,7 +21,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/login" component={Login} />
-          <Route exact path="/:id" component={PostInfo} />
+          <Route exact path="/posts/:id" component={PostInfo} />
           <PrivateRoute exact path="/uikit" component={Uikit} />
           <Route
             path="/profile"

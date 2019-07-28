@@ -12,7 +12,7 @@ class Home extends React.Component {
     render() {
         const arr = this.props.value.map(item => {
             return <ul key={item.id}>
-                <Link to={`/` + item.id}>More info</Link>
+                <Link to={`/posts/` + item.id}>More info</Link>
                 <li> {item.id}</li>
                 <li> {item.title}</li>
             </ul>
