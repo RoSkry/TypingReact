@@ -1,12 +1,6 @@
 import React from "react";
 import "./App.css";
-import {
-  Router,
-  Route,
-  Switch,
-  Redirect,
-  Link
-} from "react-router-dom";
+import { Router, Route, Switch, Redirect, Link } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import Uikit from "./pages/Uikit.jsx";
 import Profile from "./pages/Profile";
@@ -16,7 +10,7 @@ import NotFound from "./pages/NotFound";
 import Cookies from "js-cookie";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 import history from "./history";
-
+import PostInfo from "./pages/PostInfo";
 
 function App() {
   return (
@@ -27,6 +21,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/login" component={Login} />
+          <Route exact path="/:id" component={PostInfo} />
           <PrivateRoute exact path="/uikit" component={Uikit} />
           <Route
             path="/profile"
